@@ -1,3 +1,5 @@
+#dans le terminal : $ python3 -m dvic_chat.server -p "port"
+
 import argparse
 import socket
 from threading import Thread

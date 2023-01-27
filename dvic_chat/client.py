@@ -1,9 +1,12 @@
+#dans le terminal : $ python3 -m dvic_chat.client -u "username" -a "ip" -p "port"
+
 import argparse
 import socket
 from threading import Thread
 import queue
 
 from dvic_chat.protocol import DataStream, Packet1Auth, Packet2Message
+
 class DVICChatClient():
     def __init__(self, address: str, port: int, username: str) -> None:
         self.username: str = username
